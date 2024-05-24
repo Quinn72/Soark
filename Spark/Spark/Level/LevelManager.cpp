@@ -4,6 +4,7 @@
 
 //#include "Application.h"
 #include "ILevelBase.h"
+#include "Spark/Actors/ActorWorld.h"
 #include "Spark/Gameplay/GameInstance.h"
 
 
@@ -34,7 +35,7 @@ void LevelManager::Tick(const float _dt)
 
 	for(const auto& level : m_openLevels)
 	{
-		//level->GetWorld()->Tick(_dt);
+		level->GetWorld()->Tick(_dt);
 		level->Tick(_dt);
 	}
 }
@@ -44,7 +45,7 @@ void LevelManager::Render() const
 	for(const auto& level : m_openLevels)
 	{
 		level->Render();
-		//level->GetWorld()->Render();
+		level->GetWorld()->Render();
 	}
 }
 
@@ -87,6 +88,7 @@ void LevelManager::AddLevel(ILevelBase* _level)
 
 	m_levels[_level->Name()] = _level;
 	_level->m_levelManager = this;
+	_level->Configure(m_config, m_screen);
 }
 
 Config* LevelManager::GetConfig() const

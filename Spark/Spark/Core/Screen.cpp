@@ -27,7 +27,7 @@ void Screen::Open()
 	m_clearColor = m_config->GetValue<Color>("window", "clrCol");
 
 	m_width = m_config->GetValue<int>("window", "width");
-	m_width = m_config->GetValue<int>("window", "height");
+	m_height = m_config->GetValue<int>("window", "height");
 
 	InitWindow(m_width, m_height, m_title.c_str());
 

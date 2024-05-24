@@ -43,6 +43,12 @@
     <Filter Include="Spark\Source Files\Maths">
       <UniqueIdentifier>{bea89827-0573-40f6-a126-491f00ef309a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Spark\Header Files\Acotrs">
+      <UniqueIdentifier>{4d56ba22-3d5e-40f3-855f-53612209b8c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spark\Source Files\Actors">
+      <UniqueIdentifier>{80af99de-dedc-4f71-92bb-26c419c21fa5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="assets\config.xml">
@@ -80,6 +86,30 @@
     <ClCompile Include="Spark\Maths\MathFunctions.cpp">
       <Filter>Spark\Source Files\Maths</Filter>
     </ClCompile>
+    <ClCompile Include="Spark\Core\Application.cpp">
+      <Filter>Spark\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Spark\Core\Screen.cpp">
+      <Filter>Spark\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Spark\Gameplay\GameInstance.cpp">
+      <Filter>Spark\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Spark\Actors\ActorWorld.cpp">
+      <Filter>Spark\Source Files\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="Spark\Actors\Actor.cpp">
+      <Filter>Spark\Source Files\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\TestLevel.cpp">
+      <Filter>Spark\Source Files\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\TestGameInstance.cpp">
+      <Filter>Spark\Source Files\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\TestActor.cpp">
+      <Filter>Spark\Source Files\Actors</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Spark\Utility\Config.h">
@@ -108,6 +138,36 @@
     </ClInclude>
     <ClInclude Include="Spark\Maths\MathFunctions.h">
       <Filter>Spark\Header Files\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Spark\Common.h">
+      <Filter>Spark\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Spark\Core\Application.h">
+      <Filter>Spark\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Spark\Core\Screen.h">
+      <Filter>Spark\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Spark\Gameplay\GameInstance.h">
+      <Filter>Spark\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Spark\Actors\ActorWorld.h">
+      <Filter>Spark\Header Files\Acotrs</Filter>
+    </ClInclude>
+    <ClInclude Include="Spark\Actors\Actor.h">
+      <Filter>Spark\Header Files\Acotrs</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\TestLevel.h">
+      <Filter>Spark\Header Files\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\TestGameInstance.h">
+      <Filter>Spark\Header Files\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\LevelNames.h">
+      <Filter>Spark</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\TestActor.h">
+      <Filter>Spark\Header Files\Acotrs</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

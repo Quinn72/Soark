@@ -4,6 +4,8 @@
 #include <map>
 #include <functional>
 
+#include "TestLevel.h"
+
 using std::list;
 using std::map;
 using std::function;
@@ -30,6 +32,7 @@ public:
 
 	Config* GetConfig() const;
 	Screen* GetScreen() const;
+
 
 private:
 
